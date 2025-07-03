@@ -1,0 +1,15 @@
+{
+  "folders": [
+	{
+		"name": "sareespace",
+		"path": "."
+	},
+	{
+		"name": "dashboard_images",
+		"path": "D:/XAMPP/htdocs/sareespace/dashboard_images"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "sareespace"
+  }
+}
