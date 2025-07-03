@@ -1,0 +1,434 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - SareeSpace</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-pink-50 text-gray-900 font-sans flex flex-col min-h-screen">
+<header class="bg-pink-100 shadow-md sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+    <div class="w-full sm:w-auto flex justify-start items-center">
+      <a href="index.html" class="text-2xl font-extrabold text-pink-700 hover:text-pink-600 transition">SareeSpace</a>
+    </div>
+    
+    <div class="w-full sm:w-auto flex items-center justify-end gap-4">
+      <a href="cart.html" class="relative text-pink-700 hover:text-pink-800 transition text-sm font-medium flex items-center gap-1">
+        <span>Cart</span>
+        <span class="absolute -top-1 -right-2 bg-pink-600 text-white text-xs font-bold px-1.5 py-0.5 rounded-full animate-pulse">2</span>
+      </a>
+      <div class="relative group">
+        <button class="flex items-center gap-2 text-sm text-pink-700 font-medium focus:outline-none">
+          <span>Welcome, <strong>Guest</strong></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+<main class="p-6 bg-pink-50 flex flex-col gap-6">
+
+    <form method="GET" class="max-w-xs ml-auto">
+        <label class="block text-sm font-semibold text-pink-700 mb-1">Sort by:</label>
+        <select name="sort"
+                class="w-full border border-pink-300 rounded px-3 py-2 focus:outline-none focus:ring focus:border-pink-500 bg-white text-sm">
+        <option value="default" selected>Default</option>
+        <option value="price_low">Price: Low to High</option>
+        <option value="price_high">Price: High to Low</option>
+        <option value="review_low">Rating: Low to High</option>
+        <option value="review_high">Rating: High to Low</option>
+        </select>
+    </form>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    
+    <div class="bg-white border border-pink-200 rounded-xl overflow-hidden shadow hover:scale-[1.02] transition-transform">
+      <div class="aspect-[3/3.5] w-full">
+        <img src="saree1.png" alt="Elegant Banarasi Saree" class="w-full h-full object-cover">
+      </div>
+      <div class="p-3 space-y-1">
+        <h3 class="text-lg font-semibold text-pink-800">Elegant Banarasi Saree</h3>
+        <p class="text-sm text-gray-700">Traditional Banarasi saree perfect for weddings and festivals.</p>
+        <div class="text-pink-700 font-bold">₹2,199</div>
+        <div class="text-yellow-500 text-sm">★★★★½ (4.8/5)</div>
+        <div class="flex gap-2 pt-2">
+          <button class="flex-1 w-full bg-pink-600 hover:bg-pink-700 text-white px-3 py-2 rounded text-sm">Add to Cart</button>
+          <a href="checkout.html"><button class="flex-1 w-full bg-white border border-pink-600 text-pink-600 hover:bg-pink-100 px-3 py-2 rounded text-sm">Buy Now</button></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="bg-white border border-pink-200 rounded-xl overflow-hidden shadow hover:scale-[1.02] transition-transform">
+      <div class="aspect-[3/3.5] w-full">
+        <img src="saree2.png" alt="Graceful Kanjeevaram Saree" class="w-full h-full object-cover">
+      </div>
+      <div class="p-3 space-y-1">
+        <h3 class="text-lg font-semibold text-pink-800">Graceful Kanjeevaram Saree</h3>
+        <p class="text-sm text-gray-700">Rich silk fabric with classic motifs. Ideal for bridal occasions.</p>
+        <div class="text-pink-700 font-bold">₹3,499</div>
+        <div class="text-yellow-500 text-sm">★★★★½ (4.9/5)</div>
+        <div class="flex gap-2 pt-2">
+          <button class="flex-1 w-full bg-pink-600 hover:bg-pink-700 text-white px-3 py-2 rounded text-sm">Add to Cart</button>
+          <a href="checkout.html"><button class="flex-1 w-full bg-white border border-pink-600 text-pink-600 hover:bg-pink-100 px-3 py-2 rounded text-sm">Buy Now</button></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="bg-white border border-pink-200 rounded-xl overflow-hidden shadow hover:scale-[1.02] transition-transform">
+      <div class="aspect-[3/3.5] w-full">
+        <img src="saree3.png" alt="Cotton Daily Wear Saree" class="w-full h-full object-cover">
+      </div>
+      <div class="p-3 space-y-1">
+        <h3 class="text-lg font-semibold text-pink-800">Cotton Daily Wear Saree</h3>
+        <p class="text-sm text-gray-700">Lightweight and breathable cotton saree for everyday comfort.</p>
+        <div class="text-pink-700 font-bold">₹799</div>
+        <div class="text-yellow-500 text-sm">★★★★☆ (4.2/5)</div>
+        <div class="flex gap-2 pt-2">
+          <button class="flex-1 w-full bg-pink-600 hover:bg-pink-700 text-white px-3 py-2 rounded text-sm">Add to Cart</button>
+          <a href="checkout.html"><button class="flex-1 w-full bg-white border border-pink-600 text-pink-600 hover:bg-pink-100 px-3 py-2 rounded text-sm">Buy Now</button></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="bg-white border border-pink-200 rounded-xl overflow-hidden shadow hover:scale-[1.02] transition-transform">
+      <div class="aspect-[3/3.5] w-full">
+        <img src="saree4.png" alt="Chiffon Partywear Saree" class="w-full h-full object-cover">
+      </div>
+      <div class="p-3 space-y-1">
+        <h3 class="text-lg font-semibold text-pink-800">Chiffon Partywear Saree</h3>
+        <p class="text-sm text-gray-700">Flowy chiffon fabric with sequin border, perfect for parties.</p>
+        <div class="text-pink-700 font-bold">₹1,599</div>
+        <div class="text-yellow-500 text-sm">★★★★½ (4.5/5)</div>
+        <div class="flex gap-2 pt-2">
+          <button class="flex-1 w-full bg-pink-600 hover:bg-pink-700 text-white px-3 py-2 rounded text-sm">Add to Cart</button>
+          <a href="checkout.html"><button class="flex-1 w-full bg-white border border-pink-600 text-pink-600 hover:bg-pink-100 px-3 py-2 rounded text-sm">Buy Now</button></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="bg-white border border-pink-200 rounded-xl overflow-hidden shadow hover:scale-[1.02] transition-transform">
+      <div class="aspect-[3/3.5] w-full">
+        <img src="saree5.png" alt="Designer Georgette Saree" class="w-full h-full object-cover">
+      </div>
+      <div class="p-3 space-y-1">
+        <h3 class="text-lg font-semibold text-pink-800">Designer Georgette Saree</h3>
+        <p class="text-sm text-gray-700">Trendy georgette saree with digital prints and lace work.</p>
+        <div class="text-pink-700 font-bold">₹1,799</div>
+        <div class="text-yellow-500 text-sm">★★★★☆ (4.4/5)</div>
+        <div class="flex gap-2 pt-2">
+          <button class="flex-1 w-full bg-pink-600 hover:bg-pink-700 text-white px-3 py-2 rounded text-sm">Add to Cart</button>
+          <a href="checkout.html"><button class="flex-1 w-full bg-white border border-pink-600 text-pink-600 hover:bg-pink-100 px-3 py-2 rounded text-sm">Buy Now</button></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="bg-white border border-pink-200 rounded-xl overflow-hidden shadow hover:scale-[1.02] transition-transform">
+      <div class="aspect-[3/3.5] w-full">
+        <img src="saree6.png" alt="Classic Cotton Silk Saree" class="w-full h-full object-cover">
+      </div>
+      <div class="p-3 space-y-1">
+        <h3 class="text-lg font-semibold text-pink-800">Classic Cotton Silk Saree</h3>
+        <p class="text-sm text-gray-700">Blend of cotton and silk for a royal yet comfortable look.</p>
+        <div class="text-pink-700 font-bold">₹1,299</div>
+        <div class="text-yellow-500 text-sm">★★★★☆ (4.3/5)</div>
+        <div class="flex gap-2 pt-2">
+          <button class="flex-1 w-full bg-pink-600 hover:bg-pink-700 text-white px-3 py-2 rounded text-sm">Add to Cart</button>
+          <a href="checkout.html"><button class="flex-1 w-full bg-white border border-pink-600 text-pink-600 hover:bg-pink-100 px-3 py-2 rounded text-sm">Buy Now</button></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="bg-white border border-pink-200 rounded-xl overflow-hidden shadow hover:scale-[1.02] transition-transform">
+      <div class="aspect-[3/3.5] w-full">
+        <img src="saree7.png" alt="Traditional Paithani Saree" class="w-full h-full object-cover">
+      </div>
+      <div class="p-3 space-y-1">
+        <h3 class="text-lg font-semibold text-pink-800">Traditional Paithani Saree</h3>
+        <p class="text-sm text-gray-700">Rich Maharashtrian-style silk saree with peacock motifs.</p>
+        <div class="text-pink-700 font-bold">₹2,599</div>
+        <div class="text-yellow-500 text-sm">★★★★½ (4.7/5)</div>
+        <div class="flex gap-2 pt-2">
+          <button class="flex-1 w-full bg-pink-600 hover:bg-pink-700 text-white px-3 py-2 rounded text-sm">Add to Cart</button>
+          <a href="checkout.html"><button class="flex-1 w-full bg-white border border-pink-600 text-pink-600 hover:bg-pink-100 px-3 py-2 rounded text-sm">Buy Now</button></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="bg-white border border-pink-200 rounded-xl overflow-hidden shadow hover:scale-[1.02] transition-transform">
+      <div class="aspect-[3/3.5] w-full">
+        <img src="saree8.png" alt="Soft Linen Saree" class="w-full h-full object-cover">
+      </div>
+      <div class="p-3 space-y-1">
+        <h3 class="text-lg font-semibold text-pink-800">Soft Linen Saree</h3>
+        <p class="text-sm text-gray-700">Pastel linen saree with elegant border, great for summers.</p>
+        <div class="text-pink-700 font-bold">₹1,099</div>
+        <div class="text-yellow-500 text-sm">★★★★☆ (4.1/5)</div>
+        <div class="flex gap-2 pt-2">
+          <button class="flex-1 w-full bg-pink-600 hover:bg-pink-700 text-white px-3 py-2 rounded text-sm">Add to Cart</button>
+          <a href="checkout.html"><button class="flex-1 w-full bg-white border border-pink-600 text-pink-600 hover:bg-pink-100 px-3 py-2 rounded text-sm">Buy Now</button></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="bg-white border border-pink-200 rounded-xl overflow-hidden shadow hover:scale-[1.02] transition-transform">
+      <div class="aspect-[3/3.5] w-full">
+        <img src="saree9.png" alt="Zari Woven Silk Saree" class="w-full h-full object-cover">
+      </div>
+      <div class="p-3 space-y-1">
+        <h3 class="text-lg font-semibold text-pink-800">Zari Woven Silk Saree</h3>
+        <p class="text-sm text-gray-700">Premium silk with golden zari weaving.</p>
+        <div class="text-pink-700 font-bold">₹2,899</div>
+        <div class="text-yellow-500 text-sm">★★★★½ (4.6/5)</div>
+        <div class="flex gap-2 pt-2">
+          <button class="flex-1 w-full bg-pink-600 hover:bg-pink-700 text-white px-3 py-2 rounded text-sm">Add to Cart</button>
+          <a href="checkout.html"><button class="flex-1 w-full bg-white border border-pink-600 text-pink-600 hover:bg-pink-100 px-3 py-2 rounded text-sm">Buy Now</button></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="bg-white border border-pink-200 rounded-xl overflow-hidden shadow hover:scale-[1.02] transition-transform">
+      <div class="aspect-[3/3.5] w-full">
+        <img src="saree10.png" alt="Printed Cotton Saree" class="w-full h-full object-cover">
+      </div>
+      <div class="p-3 space-y-1">
+        <h3 class="text-lg font-semibold text-pink-800">Printed Cotton Saree</h3>
+        <p class="text-sm text-gray-700">Comfortable cotton saree with block prints.</p>
+        <div class="text-pink-700 font-bold">₹899</div>
+        <div class="text-yellow-500 text-sm">★★★★☆ (4.2/5)</div>
+        <div class="flex gap-2 pt-2">
+          <button class="flex-1 w-full bg-pink-600 hover:bg-pink-700 text-white px-3 py-2 rounded text-sm">Add to Cart</button>
+          <a href="checkout.html"><button class="flex-1 w-full bg-white border border-pink-600 text-pink-600 hover:bg-pink-100 px-3 py-2 rounded text-sm">Buy Now</button></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="bg-white border border-pink-200 rounded-xl overflow-hidden shadow hover:scale-[1.02] transition-transform">
+      <div class="aspect-[3/3.5] w-full">
+        <img src="saree11.png" alt="Leheriya Art Saree" class="w-full h-full object-cover">
+      </div>
+      <div class="p-3 space-y-1">
+        <h3 class="text-lg font-semibold text-pink-800">Leheriya Art Saree</h3>
+        <p class="text-sm text-gray-700">Bright Rajasthani leheriya pattern with contrast blouse.</p>
+        <div class="text-pink-700 font-bold">₹1,499</div>
+        <div class="text-yellow-500 text-sm">★★★★½ (4.5/5)</div>
+        <div class="flex gap-2 pt-2">
+          <button class="flex-1 w-full bg-pink-600 hover:bg-pink-700 text-white px-3 py-2 rounded text-sm">Add to Cart</button>
+          <a href="checkout.html"><button class="flex-1 w-full bg-white border border-pink-600 text-pink-600 hover:bg-pink-100 px-3 py-2 rounded text-sm">Buy Now</button></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="bg-white border border-pink-200 rounded-xl overflow-hidden shadow hover:scale-[1.02] transition-transform">
+      <div class="aspect-[3/3.5] w-full">
+        <img src="saree12.png" alt="Fancy Net Saree" class="w-full h-full object-cover">
+      </div>
+      <div class="p-3 space-y-1">
+        <h3 class="text-lg font-semibold text-pink-800">Fancy Net Saree</h3>
+        <p class="text-sm text-gray-700">Sheer net saree with sparkling border for special occasions.</p>
+        <div class="text-pink-700 font-bold">₹1,299</div>
+        <div class="text-yellow-500 text-sm">★★★★☆ (4.3/5)</div>
+        <div class="flex gap-2 pt-2">
+          <button class="flex-1 w-full bg-pink-600 hover:bg-pink-700 text-white px-3 py-2 rounded text-sm">Add to Cart</button>
+          <a href="checkout.html"><button class="flex-1 w-full bg-white border border-pink-600 text-pink-600 hover:bg-pink-100 px-3 py-2 rounded text-sm">Buy Now</button></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="bg-white border border-pink-200 rounded-xl overflow-hidden shadow hover:scale-[1.02] transition-transform">
+      <div class="aspect-[3/3.5] w-full">
+        <img src="saree13.png" alt="Handloom Khadi Saree" class="w-full h-full object-cover">
+      </div>
+      <div class="p-3 space-y-1">
+        <h3 class="text-lg font-semibold text-pink-800">Handloom Khadi Saree</h3>
+        <p class="text-sm text-gray-700">Eco-friendly handwoven khadi saree with earthy tones.</p>
+        <div class="text-pink-700 font-bold">₹999</div>
+        <div class="text-yellow-500 text-sm">★★★★☆ (4.0/5)</div>
+        <div class="flex gap-2 pt-2">
+          <button class="flex-1 w-full bg-pink-600 hover:bg-pink-700 text-white px-3 py-2 rounded text-sm">Add to Cart</button>
+          <a href="checkout.html"><button class="flex-1 w-full bg-white border border-pink-600 text-pink-600 hover:bg-pink-100 px-3 py-2 rounded text-sm">Buy Now</button></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="bg-white border border-pink-200 rounded-xl overflow-hidden shadow hover:scale-[1.02] transition-transform">
+      <div class="aspect-[3/3.5] w-full">
+        <img src="saree14.png" alt="Patola Style Saree" class="w-full h-full object-cover">
+      </div>
+      <div class="p-3 space-y-1">
+        <h3 class="text-lg font-semibold text-pink-800">Patola Style Saree</h3>
+        <p class="text-sm text-gray-700">Inspired by Patola weaving with vibrant symmetrical patterns.</p>
+        <div class="text-pink-700 font-bold">₹1,999</div>
+        <div class="text-yellow-500 text-sm">★★★★☆ (4.4/5)</div>
+        <div class="flex gap-2 pt-2">
+          <button class="flex-1 w-full bg-pink-600 hover:bg-pink-700 text-white px-3 py-2 rounded text-sm">Add to Cart</button>
+          <a href="checkout.html"><button class="flex-1 w-full bg-white border border-pink-600 text-pink-600 hover:bg-pink-100 px-3 py-2 rounded text-sm">Buy Now</button></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="bg-white border border-pink-200 rounded-xl overflow-hidden shadow hover:scale-[1.02] transition-transform">
+      <div class="aspect-[3/3.5] w-full">
+        <img src="saree15.png" alt="Silk Blend Embroidered Saree" class="w-full h-full object-cover">
+      </div>
+      <div class="p-3 space-y-1">
+        <h3 class="text-lg font-semibold text-pink-800">Silk Blend Embroidered Saree</h3>
+        <p class="text-sm text-gray-700">Silk blend with delicate embroidery on pallu.</p>
+        <div class="text-pink-700 font-bold">₹2,199</div>
+        <div class="text-yellow-500 text-sm">★★★★½ (4.6/5)</div>
+        <div class="flex gap-2 pt-2">
+          <button class="flex-1 w-full bg-pink-600 hover:bg-pink-700 text-white px-3 py-2 rounded text-sm">Add to Cart</button>
+          <a href="checkout.html"><button class="flex-1 w-full bg-white border border-pink-600 text-pink-600 hover:bg-pink-100 px-3 py-2 rounded text-sm">Buy Now</button></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="bg-white border border-pink-200 rounded-xl overflow-hidden shadow hover:scale-[1.02] transition-transform">
+      <div class="aspect-[3/3.5] w-full">
+        <img src="saree16.png" alt="Kalamkari Art Saree" class="w-full h-full object-cover">
+      </div>
+      <div class="p-3 space-y-1">
+        <h3 class="text-lg font-semibold text-pink-800">Kalamkari Art Saree</h3>
+        <p class="text-sm text-gray-700">Traditional hand-painted Kalamkari designs on cotton.</p>
+        <div class="text-pink-700 font-bold">₹1,599</div>
+        <div class="text-yellow-500 text-sm">★★★★☆ (4.2/5)</div>
+        <div class="flex gap-2 pt-2">
+          <button class="flex-1 w-full bg-pink-600 hover:bg-pink-700 text-white px-3 py-2 rounded text-sm">Add to Cart</button>
+          <a href="checkout.html"><button class="flex-1 w-full bg-white border border-pink-600 text-pink-600 hover:bg-pink-100 px-3 py-2 rounded text-sm">Buy Now</button></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="bg-white border border-pink-200 rounded-xl overflow-hidden shadow hover:scale-[1.02] transition-transform">
+      <div class="aspect-[3/3.5] w-full">
+        <img src="saree17.png" alt="Digital Printed Saree" class="w-full h-full object-cover">
+      </div>
+      <div class="p-3 space-y-1">
+        <h3 class="text-lg font-semibold text-pink-800">Digital Printed Saree</h3>
+        <p class="text-sm text-gray-700">Trendy digital print saree in modern abstract patterns.</p>
+        <div class="text-pink-700 font-bold">₹1,399</div>
+        <div class="text-yellow-500 text-sm">★★★★☆ (4.1/5)</div>
+        <div class="flex gap-2 pt-2">
+          <button class="flex-1 w-full bg-pink-600 hover:bg-pink-700 text-white px-3 py-2 rounded text-sm">Add to Cart</button>
+          <a href="checkout.html"><button class="flex-1 w-full bg-white border border-pink-600 text-pink-600 hover:bg-pink-100 px-3 py-2 rounded text-sm">Buy Now</button></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="bg-white border border-pink-200 rounded-xl overflow-hidden shadow hover:scale-[1.02] transition-transform">
+      <div class="aspect-[3/3.5] w-full">
+        <img src="saree18.png" alt="Tussar Silk Saree" class="w-full h-full object-cover">
+      </div>
+      <div class="p-3 space-y-1">
+        <h3 class="text-lg font-semibold text-pink-800">Tussar Silk Saree</h3>
+        <p class="text-sm text-gray-700">Natural Tussar silk with minimalistic motifs.</p>
+        <div class="text-pink-700 font-bold">₹2,499</div>
+        <div class="text-yellow-500 text-sm">★★★★½ (4.7/5)</div>
+        <div class="flex gap-2 pt-2">
+          <button class="flex-1 w-full bg-pink-600 hover:bg-pink-700 text-white px-3 py-2 rounded text-sm">Add to Cart</button>
+          <a href="checkout.html"><button class="flex-1 w-full bg-white border border-pink-600 text-pink-600 hover:bg-pink-100 px-3 py-2 rounded text-sm">Buy Now</button></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="bg-white border border-pink-200 rounded-xl overflow-hidden shadow hover:scale-[1.02] transition-transform">
+      <div class="aspect-[3/3.5] w-full">
+        <img src="saree19.png" alt="Ruffle Layer Saree" class="w-full h-full object-cover">
+      </div>
+      <div class="p-3 space-y-1">
+        <h3 class="text-lg font-semibold text-pink-800">Ruffle Layer Saree</h3>
+        <p class="text-sm text-gray-700">Modern layered saree design for fusion looks.</p>
+        <div class="text-pink-700 font-bold">₹1,699</div>
+        <div class="text-yellow-500 text-sm">★★★★☆ (4.3/5)</div>
+        <div class="flex gap-2 pt-2">
+          <button class="flex-1 w-full bg-pink-600 hover:bg-pink-700 text-white px-3 py-2 rounded text-sm">Add to Cart</button>
+          <a href="checkout.html"><button class="flex-1 w-full bg-white border border-pink-600 text-pink-600 hover:bg-pink-100 px-3 py-2 rounded text-sm">Buy Now</button></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="bg-white border border-pink-200 rounded-xl overflow-hidden shadow hover:scale-[1.02] transition-transform">
+      <div class="aspect-[3/3.5] w-full">
+        <img src="saree20.png" alt="Traditional Bengali Tant Saree" class="w-full h-full object-cover">
+      </div>
+      <div class="p-3 space-y-1">
+        <h3 class="text-lg font-semibold text-pink-800">Traditional Bengali Tant Saree</h3>
+        <p class="text-sm text-gray-700">Soft cotton saree with traditional Bengal pattern.</p>
+        <div class="text-pink-700 font-bold">₹899</div>
+        <div class="text-yellow-500 text-sm">★★★★☆ (4.0/5)</div>
+        <div class="flex gap-2 pt-2">
+          <button class="flex-1 w-full bg-pink-600 hover:bg-pink-700 text-white px-3 py-2 rounded text-sm">Add to Cart</button>
+          <a href="checkout.html"><button class="flex-1 w-full bg-white border border-pink-600 text-pink-600 hover:bg-pink-100 px-3 py-2 rounded text-sm">Buy Now</button></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="bg-white border border-pink-200 rounded-xl overflow-hidden shadow hover:scale-[1.02] transition-transform">
+      <div class="aspect-[3/3.5] w-full">
+        <img src="saree21.png" alt="Wedding Heavy Work Saree" class="w-full h-full object-cover">
+      </div>
+      <div class="p-3 space-y-1">
+        <h3 class="text-lg font-semibold text-pink-800">Wedding Heavy Work Saree</h3>
+        <p class="text-sm text-gray-700">Heavy embroidery and zari for grand functions.</p>
+        <div class="text-pink-700 font-bold">₹3,299</div>
+        <div class="text-yellow-500 text-sm">★★★★½ (4.8/5)</div>
+        <div class="flex gap-2 pt-2">
+          <button class="flex-1 w-full bg-pink-600 hover:bg-pink-700 text-white px-3 py-2 rounded text-sm">Add to Cart</button>
+          <a href="checkout.html"><button class="flex-1 w-full bg-white border border-pink-600 text-pink-600 hover:bg-pink-100 px-3 py-2 rounded text-sm">Buy Now</button></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="bg-white border border-pink-200 rounded-xl overflow-hidden shadow hover:scale-[1.02] transition-transform">
+      <div class="aspect-[3/3.5] w-full">
+        <img src="saree22.png" alt="Ikat Weave Saree" class="w-full h-full object-cover">
+      </div>
+      <div class="p-3 space-y-1">
+        <h3 class="text-lg font-semibold text-pink-800">Ikat Weave Saree</h3>
+        <p class="text-sm text-gray-700">Handwoven ikat technique on cotton-silk base.</p>
+        <div class="text-pink-700 font-bold">₹1,499</div>
+        <div class="text-yellow-500 text-sm">★★★★☆ (4.3/5)</div>
+        <div class="flex gap-2 pt-2">
+          <button class="flex-1 w-full bg-pink-600 hover:bg-pink-700 text-white px-3 py-2 rounded text-sm">Add to Cart</button>
+          <a href="checkout.html"><button class="flex-1 w-full bg-white border border-pink-600 text-pink-600 hover:bg-pink-100 px-3 py-2 rounded text-sm">Buy Now</button></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="bg-white border border-pink-200 rounded-xl overflow-hidden shadow hover:scale-[1.02] transition-transform">
+      <div class="aspect-[3/3.5] w-full">
+        <img src="saree23.png" alt="Pastel Organza Saree" class="w-full h-full object-cover">
+      </div>
+      <div class="p-3 space-y-1">
+        <h3 class="text-lg font-semibold text-pink-800">Pastel Organza Saree</h3>
+        <p class="text-sm text-gray-700">Sheer and soft organza with minimalist embroidery.</p>
+        <div class="text-pink-700 font-bold">₹1,399</div>
+        <div class="text-yellow-500 text-sm">★★★★☆ (4.4/5)</div>
+        <div class="flex gap-2 pt-2">
+          <button class="flex-1 w-full bg-pink-600 hover:bg-pink-700 text-white px-3 py-2 rounded text-sm">Add to Cart</button>
+          <a href="checkout.html"><button class="flex-1 w-full bg-white border border-pink-600 text-pink-600 hover:bg-pink-100 px-3 py-2 rounded text-sm">Buy Now</button></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="bg-white border border-pink-200 rounded-xl overflow-hidden shadow hover:scale-[1.02] transition-transform">
+      <div class="aspect-[3/3.5] w-full">
+        <img src="saree24.png" alt="Mysore Crepe Saree" class="w-full h-full object-cover">
+      </div>
+      <div class="p-3 space-y-1">
+        <h3 class="text-lg font-semibold text-pink-800">Mysore Crepe Saree</h3>
+        <p class="text-sm text-gray-700">Smooth silk crepe saree with sleek look and fall.</p>
+        <div class="text-pink-700 font-bold">₹1,799</div>
+        <div class="text-yellow-500 text-sm">★★★★½ (4.6/5)</div>
+        <div class="flex gap-2 pt-2">
+          <button class="flex-1 w-full bg-pink-600 hover:bg-pink-700 text-white px-3 py-2 rounded text-sm">Add to Cart</button>
+          <a href="checkout.html"><button class="flex-1 w-full bg-white border border-pink-600 text-pink-600 hover:bg-pink-100 px-3 py-2 rounded text-sm">Buy Now</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="text-center text-sm text-pink-800 py-6 bg-pink-100 border-t border-pink-200 mt-8">
+  &copy; 2025 SareeSpace. All rights reserved.
+</footer>
+</body>
+</html>

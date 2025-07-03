@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cart - SareeSpace</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-pink-50 text-gray-900 font-sans flex flex-col min-h-screen">
+
+<!-- Header -->
+<header class="bg-pink-100 shadow-md sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+    <div class="w-full sm:w-auto flex justify-start items-center">
+      <a href="dashboard.html" class="text-2xl font-extrabold text-pink-700 hover:text-pink-600 transition">SareeSpace</a>
+    </div>
+    <div class="w-full sm:w-auto flex items-center justify-end gap-4">
+      <div class="relative group">
+        <button class="flex items-center gap-2 text-sm text-pink-700 font-medium focus:outline-none">
+          <span>Welcome, <strong>Guest</strong></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Main -->
+<main class="flex-1 p-6 max-w-5xl mx-auto w-full">
+  <h1 class="text-2xl font-bold text-pink-800 mb-6">Your Shopping Cart</h1>
+
+  <div class="bg-white rounded-xl shadow border border-pink-200 p-4 space-y-4">
+    <!-- Cart Item -->
+    <div class="flex items-center gap-4 border-b border-pink-100 pb-4">
+      <img src="assets/images/saree1.png" alt="Saree" class="w-24 h-32 object-cover rounded">
+      <div class="flex-1">
+        <h3 class="text-lg font-semibold text-pink-800">Elegant Banarasi Saree</h3>
+        <p class="text-sm text-gray-600">Traditional Banarasi saree perfect for weddings and festivals.</p>
+        <div class="mt-2 font-bold text-pink-700">₹2,199</div>
+      </div>
+      <button class="text-sm text-red-600 hover:underline">Remove</button>
+    </div>
+  </div>
+
+  <!-- Summary -->
+  <div class="mt-6 p-4 bg-white rounded-xl shadow border border-pink-200 flex flex-col sm:flex-row justify-between items-center gap-4">
+    <div class="text-lg text-pink-800 font-semibold">Total: ₹2,199</div>
+    <a href="checkout.html" class="bg-pink-600 hover:bg-pink-700 text-white px-6 py-2 rounded text-sm font-medium">Proceed to Checkout</a>
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="text-center text-sm text-pink-800 py-6 bg-pink-100 border-t border-pink-200 mt-8">
+  &copy; 2025 SareeSpace. All rights reserved.
+</footer>
+
+</body>
+</html>
